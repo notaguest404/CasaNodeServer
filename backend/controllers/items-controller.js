@@ -66,9 +66,9 @@ module.exports.itemTable = function(req, res, next) {
         else {
 
             console.log("Database results: ", results);
-            res.json({
+            res.json(
                 results
-            });        
+            );        
         }
     });
 }
@@ -85,9 +85,9 @@ module.exports.itemInfo = function(req, res, next) {
             console.log("There are some error with query");
         } 
         else {
-            res.json({
+            res.json(
                 results                
-            });        
+            );        
         }
     });
 }
